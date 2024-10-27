@@ -254,6 +254,74 @@ else:
     print("Harga tidak dapat dihitung.")
 ```
 
+Program ini akan menentukan harga pesanan tiket bioskop, Yang reguler/Vip, dan jika Vip harga 100.000, dan jika reguler 80.0000, dan jika memiliki kartu member pelanggan tersebut akan mendapatkan diskon 20%
+
+```
+harga_reguler = 50000
+harga_vip = 100000
+```
+variable ini menentukan harga tiket bioskop
+
+```
+tipe_tiket = (input("Masukkan tipe tiket (reguler/VIP): "))
+status_member = (input("Apakah Anda memiliki kartu member? (ya/tidak): "))
+```
+
+memasukan inputan sesuai Output Program (Reguler/Vip) di variable (Tipe_Tiket), dan Memasukan inputan yang output tersebut Bertanya memiliki kartu member atau tidak.
+
+```
+if tipe_tiket == "reguler":
+    total_harga = harga_reguler
+elif tipe_tiket == "vip":
+    total_harga = harga_vip
+else:
+    print("Tipe tiket tidak valid.")
+    exit()
+```
+Jika tipe tiket reguler total harga proses ke Harga reguler, dan jika tiket vip Total harga proses keharga vip
+
+dan jika Selain memasukan inputan reguler/vip Output yang keluar "Tipe tiket tidak valid" dan berproses ke fungsi exit() yang artinya program dihentikan.
+
+```
+if status_member == "ya":
+        total_harga *= 0.8  # Diskon 20%
+        print(f"Total harga yang harus dibayar: Rp{total_harga:.2f}")
+elif status_member == "tidak":
+            total_harga
+            print(f"total harga yang harua dibayar: Rp{total_harga:.2f}")
+else:
+    print("Harga tidak dapat dihitung.")
+```
+
+desision ini menentukan mempunyai kartu member atau tidak, Jika Inputan status member menjawab "ya", maka total harga akan di kalikan dengan operator * 0,8 yang disebut diskon 20%
+
+dan jika inputan status member "tidak", maka total harga normal
+
+jika menginputkan selain (ya/tidak) output yang keluar "Harga tidak dapat dihitung"
+
+Dan ini hasil program tersebut:
+
+## Hasil program pemesenan tiket bioskop
+
+![Screenshot 2024-10-27 151748](https://github.com/user-attachments/assets/e50115c0-02df-46d0-ab3e-debd25bdcec6)
+
+## dan Flowchartnya:
+
+![WhatsApp Image 2024-10-27 at 15 27 16_015035b5](https://github.com/user-attachments/assets/ce15dee4-7e7d-4149-9b30-c4837e592036)
+
+## Kalkulator Sederhana
+
+### Kasus 2: Program Kalkulator Sederhana
+
+Buat program kalkulator yang menerima dua angka dan satu operator aritmatika dari pengguna (penjumlahan, pengurangan, perkalian, atau pembagian). Program akan menghitung hasil sesuai dengan operator yang dipilih.
+
+## Petunjuk
+
+
+
+
+
+
 
 
 
