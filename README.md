@@ -100,6 +100,7 @@ Nilai Tugas : 98
 Nilai Akhir : 97.6
 Nilai Huruf : A
 Keterangan : LULUS
+
 ```
 
 ## Berikut hasil sceenshot visual code
@@ -371,6 +372,7 @@ elif operator == '/':
         print(f"Hasil pembagian: {hasil}")
     else:
         print("Error: Pembagian dengan nol tidak diperbolehkan.")
+
 ```
 
 Jika oprator (/), maka Inputan Variable angka1 dibagi angka2, dan dicetak semestinya, untuk desision (angka2 !=0:) tidak diperkenankan oleh program, karna output yang keluar "Error: Pembagian dengan nol tidak diperbolehkan"
@@ -378,6 +380,7 @@ Jika oprator (/), maka Inputan Variable angka1 dibagi angka2, dan dicetak semest
 ```pyhton
 else:
     print("Error: Operator tidak valid. Silakan gunakan +, -, *, atau /.")
+
 ```
 
 saya memasukan desision else ini Karna jika menjawab selain fungsi operator ini Output yang keluar "Error: Operator tidak valid. Silakan gunakan +, -, *, atau /."
