@@ -83,29 +83,28 @@ print("Keterangan :", keterangan)
 Contoh Penggunaan
 Jika pengguna memasukkan:
 ```
-Nama: "Ali"
-Nilai UTS: 80
-Nilai UAS: 70
-Nilai Tugas: 60
+Nama: "Lola"
+Nilai UTS: 100
+Nilai UAS: 95
+Nilai Tugas: 98
 Maka output program akan menunjukkan:
 
 yaml
 
 ```
-Nama : Ali
-Nilai UTS : 80
-Nilai UAS : 70
-Nilai Tugas : 60
-Nilai Akhir : 70.0
-Nilai Huruf : B
+Nama : Lola
+Nilai UTS : 100
+Nilai UAS : 95
+Nilai Tugas : 98
+Nilai Akhir : 97.6
+Nilai Huruf : A
 Keterangan : LULUS
 ```
 
-## SS visual code
+## Berikut hasil sceenshot visual code
 
-![Screenshot 2024-10-25 194655](https://github.com/user-attachments/assets/6ac7009d-860b-4737-ba05-5eb584734f94)
+![Screenshot 2024-10-27 142057](https://github.com/user-attachments/assets/14de41fb-b032-47c8-92a8-eaa70c9e624d)
 
-## Kesimpulan
 Program ini memberikan cara yang sederhana untuk menghitung nilai akhir siswa dan menentukan kelulusan serta nilai huruf berdasarkan input yang diberikan. Hal ini memudahkan siswa untuk mengetahui hasil akademis mereka dengan cepat.
 
 ## Penjelasan
@@ -182,6 +181,35 @@ Tidak wajib bayar pajak rumah
 - Pengecekan berkaluarga dan punya rumah: Variabel berkeluarga den punya rumah dicek dengan perbandingan input terhadap "Y menggunakan input ().strip().upper() == "Y" , yang memastikan bahwa input diubah menjadi huruf kapital dan mengabellan spesi yang tidak perlu.
 - Program ini menggunakan if-else untuk menentukan pesan yang akan ditampilkan berdasarkan kondisi gaji, status keluarga, dan status kepemilikan rumah.
 
+## Latihan 3
+
+## Menggunakan kondisi OR dengan menginputkan 3 bilangan
+
+```
+a = int(input("Masukkan bilangan A: "))
+b = int(input("Masukkan bilangan B: "))
+c = int(input("Masukkan bilangan C: "))
+if a+b == c or b+c == a or c+a == b:
+   print("BENAR")
+else:
+   print("SALAH")
+```
+operator OR dalam python merubah beberapa kondisi dan mengembalikan true jika salah satu bena
+
+```
+a = int(input("Masukkan bilangan A: "))
+b = int(input("Masukkan bilangan B: "))
+c = int(input("Masukkan bilangan C: "))
+```
+Program ini menginputkan sesuatu integer yang menggunakan variable a,b,c.
+
+```
+if a+b == c or b+c == a or c+a == b:
+   print("BENAR")
+else:
+   print("SALAH")
+```
+jika (A) ditambah (B) haslnya (C) atau bahasa pemograman itu OR ,dan apabila (B) ditambah (C) hasilnya (A),dan (C) ditambah (A) maka hasilnya (B). maka output yang keluar adalah "benar"
 
 
 
