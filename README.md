@@ -25,9 +25,10 @@ Nama siswa
 Nilai UTS (Ujian Tengah Semester)
 Nilai UAS (Ujian Akhir Semester)
 Nilai Tugas
+
 ```python
 
-ama = input("Masukkan nama:")
+nama = input("Masukkan nama:")
 uts = input("Masukkan nilai UTS:")
 uas = input("Masukkan nilai UAS:")
 tugas = input("Masukkan nilai Tugas:")
@@ -91,7 +92,7 @@ Maka output program akan menunjukkan:
 
 yaml
 
-```
+``` python
 Nama : Lola
 Nilai UTS : 100
 Nilai UAS : 95
@@ -145,7 +146,7 @@ Program ini menerima input gaji, status keluarga (sudah berkeluarga atau belum),
 
 ## Gaji di atas UMR
 
-```
+``` python 
 Masukan gaji: 4000000000
 Sudah Berkeluarga? (Y/T): Y
 Punya Rumah? (Y/T): Y
@@ -162,7 +163,7 @@ Tidak wajib bayar pajak rumah
 
 ## Gaji dibawah UMR
 
-```
+```python
 Masukan gaji: 2500000
 Sudah berkeluarga? (Y/T): Y
 Punya rumah? (Y/T): Y
@@ -185,7 +186,7 @@ Tidak wajib bayar pajak rumah
 
 ## Menggunakan kondisi OR dengan menginputkan 3 bilangan
 
-```
+```pyhton
 a = int(input("Masukkan bilangan A: "))
 b = int(input("Masukkan bilangan B: "))
 c = int(input("Masukkan bilangan C: "))
@@ -193,7 +194,7 @@ if a+b == c or b+c == a or c+a == b:
    print("BENAR")
 else:
    print("SALAH")
-```
+````
 operator OR dalam python merubah beberapa kondisi dan mengembalikan true jika salah satu bena
 
 ```
@@ -225,7 +226,7 @@ Petunjuk:
 
 - Gunakan if else dan operator ternary.
 
-```
+```python
 harga_reguler = 50000
 harga_vip = 100000
 
@@ -252,24 +253,24 @@ elif status_member == "tidak":
             print(f"total harga yang harua dibayar: Rp{total_harga:.2f}")
 else:
     print("Harga tidak dapat dihitung.")
-```
+````
 
 Program ini akan menentukan harga pesanan tiket bioskop, Yang reguler/Vip, dan jika Vip harga 100.000, dan jika reguler 80.0000, dan jika memiliki kartu member pelanggan tersebut akan mendapatkan diskon 20%
 
-```
+```python
 harga_reguler = 50000
 harga_vip = 100000
-```
+````
 variable ini menentukan harga tiket bioskop
 
-```
+```pyhton
 tipe_tiket = (input("Masukkan tipe tiket (reguler/VIP): "))
 status_member = (input("Apakah Anda memiliki kartu member? (ya/tidak): "))
-```
+````
 
 memasukan inputan sesuai Output Program (Reguler/Vip) di variable (Tipe_Tiket), dan Memasukan inputan yang output tersebut Bertanya memiliki kartu member atau tidak.
 
-```
+```pyhton
 if tipe_tiket == "reguler":
     total_harga = harga_reguler
 elif tipe_tiket == "vip":
@@ -277,12 +278,12 @@ elif tipe_tiket == "vip":
 else:
     print("Tipe tiket tidak valid.")
     exit()
-```
+````
 Jika tipe tiket reguler total harga proses ke Harga reguler, dan jika tiket vip Total harga proses keharga vip
 
 dan jika Selain memasukan inputan reguler/vip Output yang keluar "Tipe tiket tidak valid" dan berproses ke fungsi exit() yang artinya program dihentikan.
 
-```
+```pyhton
 if status_member == "ya":
         total_harga *= 0.8  # Diskon 20%
         print(f"Total harga yang harus dibayar: Rp{total_harga:.2f}")
@@ -316,6 +317,80 @@ Dan ini hasil program tersebut:
 Buat program kalkulator yang menerima dua angka dan satu operator aritmatika dari pengguna (penjumlahan, pengurangan, perkalian, atau pembagian). Program akan menghitung hasil sesuai dengan operator yang dipilih.
 
 ## Petunjuk
+```pyhton
+ Gunakan if elif else untuk menentukan operasi aritmatika.
+angka1 = float(input("Masukkan angka pertama: "))
+```
+
+operator = input("Masukkan operator (+, -, *, /): ") angka2 = float(input("Masukkan angka kedua: "))
+
+## Menghitung Hasil berdasarkan operator
+```pyhton
+if operator == '+':
+    hasil = angka1 + angka2
+    print(f"Hasil penjumlahan: {hasil}")
+elif operator == '-':
+    hasil = angka1 - angka2
+    print(f"Hasil pengurangan: {hasil}")
+elif operator == '*':
+    hasil = angka1 * angka2
+    print(f"Hasil perkalian: {hasil}")
+elif operator == '/':
+    if angka2 != 0:
+        hasil = angka1 / angka2
+        print(f"Hasil pembagian: {hasil}")
+    else:
+        print("Error: Pembagian dengan nol tidak diperbolehkan.")
+
+else:
+    print("Error: Operator tidak valid. Silakan gunakan +, -, *, atau /.")
+```
+
+Program kalkulator sederhana dalam Python adalah proyek yang baik untuk pemula dan programmer tingkat lanjut. Program ini memungkinkan pengguna untuk melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, dan pembagian.
+
+```pyhton
+angka1 = float(input("Masukkan angka pertama: "))
+operator = input("Masukkan operator (+, -, *, /): ")
+angka2 = float(input("Masukkan angka kedua: "))
+```
+
+ungsi yang digunakan dalam inputan ini menggunakan float mengubah nilai menjadi angka floating point, yaitu angka desimal atau pecahan, dan variable operator yang menginputkan suatu operator fungsi berupa (+, -, *, /) yang artinya pertambahan, perkurang, perkali, pembagian.
+
+```pyhton
+if operator == '+':
+    hasil = angka1 + angka2
+    print(f"Hasil penjumlahan: {hasil}")
+```
+
+Jika operator (+), maka hasil tersbur inputan variable angka1 ditambahkan angka2, dan Output akan mengeluarkan hasil program tersebut, Hingga seterusnya dengan (*) perkalian, dan (-) perkurangan
+
+```pyhton
+elif operator == '/':
+    if angka2 != 0:
+        hasil = angka1 / angka2
+        print(f"Hasil pembagian: {hasil}")
+    else:
+        print("Error: Pembagian dengan nol tidak diperbolehkan.")
+```
+
+Jika oprator (/), maka Inputan Variable angka1 dibagi angka2, dan dicetak semestinya, untuk desision (angka2 !=0:) tidak diperkenankan oleh program, karna output yang keluar "Error: Pembagian dengan nol tidak diperbolehkan"
+
+```pyhton
+else:
+    print("Error: Operator tidak valid. Silakan gunakan +, -, *, atau /.")
+```
+
+saya memasukan desision else ini Karna jika menjawab selain fungsi operator ini Output yang keluar "Error: Operator tidak valid. Silakan gunakan +, -, *, atau /."
+
+dan ini hasil program tersebut:
+
+## Hasil dari program kalkulator di visual studio code
+
+![Screenshot 2024-10-27 184715](https://github.com/user-attachments/assets/eafc52a5-a157-4cae-8282-29f286c757af)
+
+## Dan flowchartnya
+![Screenshot 2024-10-27 153830](https://github.com/user-attachments/assets/3d99b859-6ac9-4b99-b360-b53c130d5248)
+
 
 
 
